@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f5f5f5">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+    
+    <EditText
+        android:id="@+id/editText_location"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_editbox"
+        android:ems="10"
+        android:hint="Enter City"
+        android:maxLength="20"
+        android:singleLine="true" >
+
+    </EditText>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        
+        <EditText
+        android:id="@+id/editText_CheckIN"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10" 
+        android:hint="CheckIn"
+        android:background="@drawable/rounded_editbox"
+        android:drawableRight="@drawable/cal"
+        android:editable="false">
+        </EditText>
+        
+        <EditText
+        android:id="@+id/editText_checkOut"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="CheckOut"
+        android:layout_marginLeft="20dp"
+		android:background="@drawable/rounded_editbox"
+		android:drawableRight="@drawable/cal"
+		android:editable="false">
+        </EditText>
+        
+    </LinearLayout>
+    
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Search" 
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#fff"/>
+
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>
