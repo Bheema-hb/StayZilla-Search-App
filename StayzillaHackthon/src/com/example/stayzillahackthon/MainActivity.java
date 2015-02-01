@@ -2,23 +2,19 @@ package com.example.stayzillahackthon;
 
 import java.util.Calendar;
 
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.stayzillahackthon.model.HotelSearchRequest;
-import com.example.stayzillahackthon.model.HotelSearchResponse;
-import com.techjini.communication.listener.NetworkListener;
-import com.techjini.communication.messages.ResponseMessage;
 
 public class MainActivity extends BaseActivity implements OnClickListener {
 
@@ -30,6 +26,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		mFindButton = (Button) findViewById(R.id.button_search);
 		checkinDate = (EditText) findViewById(R.id.editText_CheckIN);

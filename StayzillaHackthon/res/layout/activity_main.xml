@@ -8,6 +8,30 @@
     <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stayzillalogo3" 
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StayZilla Hackathon"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#ff4081" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_marginTop="50dp">
     
@@ -15,12 +39,9 @@
         android:id="@+id/editText_location"
         android:layout_width="280dp"
         android:layout_height="40dp"
-        android:background="@drawable/rounded_editbox"
-        android:ems="10"
+        android:ems="10" 
         android:hint="Enter City"
-        android:maxLength="20"
-        android:singleLine="true" >
-
+        android:background="@drawable/rounded_editbox">
     </EditText>
         
     </LinearLayout>
@@ -34,7 +55,7 @@
         
         <EditText
         android:id="@+id/editText_CheckIN"
-        android:layout_width="130dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:ems="10" 
         android:hint="CheckIn"
@@ -42,14 +63,22 @@
         android:drawableRight="@drawable/cal"
         android:editable="false">
         </EditText>
+
         
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+ 
         <EditText
         android:id="@+id/editText_checkOut"
-        android:layout_width="130dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="CheckOut"
-        android:layout_marginLeft="20dp"
 		android:background="@drawable/rounded_editbox"
 		android:drawableRight="@drawable/cal"
 		android:editable="false">
@@ -76,6 +105,28 @@
         
     </LinearLayout>
     
-    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/hotel_line_img" 
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+     <View
+         android:layout_width="fill_parent"
+         android:layout_height="3dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="#ff4081" />
+
+     
+
+    </RelativeLayout>
 
 </LinearLayout>
